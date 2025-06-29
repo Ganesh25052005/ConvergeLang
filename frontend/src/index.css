@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+[data-theme] .str-chat {
+  --str-chat__primary-color: oklch(var(--s));
+  --str-chat__secondary-color: oklch(var(--b1));
+  --str-chat__surface-color: oklch(var(--b1));
+  --str-chat__secondary-surface-color: oklch(var(--p));
+  --str-chat__primary-surface-color: oklch(var(--s));
+
+  --str-chat__primary-surface-color-low-emphasis: oklch(var(--n));
+  --str-chat__tertiary-surface-color:oklch(var(--n));
+
+
+  --str-chat__message-bubble-color: oklch(var(--pc));
+  --str-chat__active-primary-color: oklch(var(--p));
+  --str-chat__avatar-background-color: oklch(var(--b2));
+  --str-chat__message-bubble-text-color: oklch(var(--nc));
+  --str-chat__input-background-color: oklch(var(--bc));
+  --str-chat__input-border-color: oklch(var(--bc));
+  --str-chat__input-text-color: oklch(var(--bc));
+  --str-chat__input-placeholder-color: oklch(var(--bc));
+  --str-chat__header-background-color: oklch(var(--b1));
+  --str-chat__header-text-color: oklch(var(--nc));
+  --str-chat__list-background-color: oklch(var(--b1));
+  --str-chat__thread-background-color: oklch(var(--b2));
+  --str-chat__border-radius-circle: var(--radius-box, 12px);
+
+
+  --str-chat__text-low-emphasis-color:oklch(var(--bc));
+
+
+  --str-chat__secondary-background-color:oklch(var(--b3));
+  --str-chat-selector-button-color-selected:oklch(var(--b1));
+  --str-chat__text-color:oklch(var(--bc));
+
+
+
+  /* input box */
+  --str-chat__message-input-color: oklch(var(--bc));
+
+  --str-chat__message-textarea-border-block-start: 1px solid oklch(var(--bc));
+  --str-chat__message-textarea-border-block-end: 1px solid oklch(var(--bc));
+  --str-chat__message-textarea-border-inline-start: 1px solid oklch(var(--bc));
+  --str-chat__message-textarea-border-inline-end: 1px solid oklch(var(--bc));
+
+  --str-chat__message-send-color: oklch(var(--p));
+  --str-chat__message-send-disabled-color: oklch(var(--n));
+  --str-chat__message-input-tools-color:oklch(var(--p));
+
+  --str-chat__text-low-emphasis-color:oklch(var(--bc));
+
+  --str-chat__message-notification-color:oklch(var(--sc));
+
+  --str-chat__own-message-bubble-color:oklch(var(--sc));
+
+  /* chat list or message list */
+    --str-chat__message-list-background-color:oklch(var(--b1));
+    --str-chat__own-message-bubble-background-color:oklch(var(--s));
+    --str-chat__message-secondary-color:oklch(var(--bc)/0.8);
+    --str-chat__message-replies-count-color:oklch(var(--a));
+
+    --str-chat__file-attachment-background-color:oklch(var(--n));
+    --str-chat__quoted-message-bubble-background-color:oklch(var(--n));
+  
+    /* header */
+    --str-chat__channel-header-background-color:oklch(var(--b2));
+
+    --str-chat__jump-to-latest-message-color:oklch(var(--b3));
+
+    --str-chat__typing-indicator-color:oklch(var(--nc));
+    --str-chat__typing-indicator-background-color:oklch(var(--n));
+
+
+    --str-chat__channel-background-color:oklch(var(--b1));
+
+    --str-chat__channel-list-background-color:oklch(var(--b2));
+
+    --str-chat__message-link-color:oklch(var(--nc));
+
+
+    
+
+}
+
+
+.str-chat__list-notifications {
+  height: 0px !important;
+  margin: 0 !important;
+}
+
+[data-theme] .str-chat__textarea__textarea::placeholder {
+  color: oklch(var(--bc));
+  opacity:0.8;
+}
+
+
+
+.str-chat__unread-messages-separator{
+  background-color: oklch(var(--n)) ;
+  color: oklch(var(--nc)) ;
+}
+
+

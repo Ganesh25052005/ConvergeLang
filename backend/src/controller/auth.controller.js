@@ -187,7 +187,7 @@ export async function Oauth(req,res) {
       secure: process.env.NODE_ENV === "production",
     });
 
-    res.redirect('http://localhost:5173/');
+    res.redirect(`${process.env.BASE_URL}`);
 
   } catch (error) {
     console.log("Oauth error",error);
